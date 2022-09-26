@@ -1,0 +1,15 @@
+id,name,model_id:id,group_id:id,perm_read,perm_write,perm_create,perm_unlink
+access_study_user,account.study.user,model_project_study,base.group_user,1,1,1,0
+access_study_admin,account.study.admin,model_project_study,base.group_system,1,1,1,1
+
+access_project_user,account.subject.user,model_project,base.group_user,1,1,1,0
+access_project_admin,account.subject.admin,model_project,base.group_system,1,1,1,1
+
+access_staff_user,account.subject.user,model_staff,base.group_user,1,1,1,0
+access_staff_admin,account.subject.admin,model_staff,base.group_system,1,1,1,1
+
+access_customer_user,account.subject.user,model_customer,base.group_user,1,1,1,0
+access_customer_admin,account.subject.admin,model_customer,base.group_system,1,1,1,1
+
+access_task2_user,account.subject.user,model_task2,base.group_user,1,1,1,0
+access_task2_admin,account.subject.admin,model_task2,base.group_system,1,1,1,1

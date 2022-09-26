@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="view_act_project_study" model="ir.actions.act_window">
+            <field name="name">Project Study</field>
+            <field name="res_model">project.study</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <field class="o_view_nocontent_smiling_face">
+                    Create First Data
+                </field>
+            </field>
+        </record>
+
+        <record id="view_act_customer" model="ir.actions.act_window">
+            <field name="name">Customer</field>
+            <field name="res_model">customer</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <field class="o_view_nocontent_smiling_face">
+                    Create First Data
+                </field>
+            </field>
+        </record>
+
+        <record id="view_act_project" model="ir.actions.act_window">
+            <field name="name">Project</field>
+            <field name="res_model">project</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <field class="o_view_nocontent_smiling_face">
+                    Create First Data
+                </field>
+            </field>
+        </record>
+
+        <record id="view_act_staff" model="ir.actions.act_window">
+            <field name="name">Staff</field>
+            <field name="res_model">staff</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <field class="o_view_nocontent_smiling_face">
+                    Create First Data
+                </field>
+            </field>
+        </record>
+
+        <record id="view_act_task2" model="ir.actions.act_window">
+            <field name="name">Task2</field>
+            <field name="res_model">task2</field>
+            <field name="view_mode">tree,form</field>
+            <field name="help" type="html">
+                <field class="o_view_nocontent_smiling_face">
+                    Create First Data
+                </field>
+            </field>
+        </record>
+
+        <menuitem id="project_study_menu_root" name="Enmasys Study" sequence="88" groups="base.group_user"/>
+        <!--        ProJect-->
+        <menuitem id="project_study_menu_project"
+                  name="Project"
+                  parent="project_study_menu_root"
+                  sequence="1"
+                  groups="base.group_user"/>
+
+        <menuitem id="project_study_menu_study_manager"
+                  name="Study Manager"
+                  parent="project_study_menu_project"
+                  action="view_act_project_study"
+                  sequence="5"
+                  groups="base.group_user"/>
+
+        <menuitem id="project_study_menu_study_user"
+                  name="Study User"
+                  parent="project_study_menu_project"
+                  action="view_act_project_study"
+                  sequence="3"
+                  groups="base.group_user"/>
+
+        <!--        Manager-->
+        <menuitem id="project_study_menu_manager"
+                  name="Manager"
+                  parent="project_study_menu_root"
+                  sequence="2"
+                  groups="base.group_user"/>
+
+        <menuitem id="project_study_menu_manager_customer"
+                  name="Customer"
+                  parent="project_study_menu_manager"
+                  action="view_act_customer"
+                  sequence="4"
+                  groups="base.group_user"/>
+
+        <menuitem id="project_study_menu_manager_project"
+                  name="Project"
+                  parent="project_study_menu_manager"
+                  action="view_act_project"
+                  sequence="5"
+                  groups="base.group_user"/>
+
+        <menuitem id="project_study_menu_manager_staff"
+                  name="Staff"
+                  parent="project_study_menu_manager"
+                  action="view_act_staff"
+                  sequence="6"
+                  groups="base.group_user"/>
+
+
+        <!--        Task-->
+        <menuitem id="project_study_menu_task"
+                  name="Task"
+                  parent="project_study_menu_root"
+                  sequence="3"
+                  groups="base.group_user"/>
+
+        <menuitem id="project_study_menu_study_task2"
+                  name="Task 2"
+                  parent="project_study_menu_task"
+                  action="view_act_task2"
+                  sequence="2"
+                  groups="base.group_user"/>
+    </data>
+</odoo>

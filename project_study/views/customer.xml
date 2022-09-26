@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="Customer_form_view" model="ir.ui.view">
+            <field name="name">Customer.Form.View</field>
+            <field name="model">customer</field>
+            <field name="arch" type="xml">
+                <form string="Task Form">
+                    <sheet>
+                        <group>
+                            <field name='name'/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="Customer_tree_view" model="ir.ui.view">
+            <field name="name">Customer.Tree.View</field>
+            <field name="model">customer</field>
+            <field name="arch" type="xml">
+                <tree string="Task Tree">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

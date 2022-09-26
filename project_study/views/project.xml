@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="Project_form_view" model="ir.ui.view">
+            <field name="name">Project.Form.View</field>
+            <field name="model">project</field>
+            <field name="arch" type="xml">
+                <form string="Project Form">
+                    <sheet>
+                        <group>
+                            <field name='name'/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="Project_tree_view" model="ir.ui.view">
+            <field name="name">Project.Tree.View</field>
+            <field name="model">project</field>
+            <field name="arch" type="xml">
+                <tree string="Project Tree">
+                    <field name="name"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

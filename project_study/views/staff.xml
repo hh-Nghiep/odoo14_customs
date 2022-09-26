@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="Staff_form_view" model="ir.ui.view">
+            <field name="name">Staff.Form.View</field>
+            <field name="model">staff</field>
+            <field name="arch" type="xml">
+                <form string="Staff Form">
+                    <sheet>
+                        <group>
+                            <field name='name'/>
+                            <field name="models_ids"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="Staff_tree_view" model="ir.ui.view">
+            <field name="name">Staff.Tree.View</field>
+            <field name="model">staff</field>
+            <field name="arch" type="xml">
+                <tree string="Staff Tree">
+                    <field name="name"/>
+                    <field name="models_ids"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

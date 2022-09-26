@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <data>
+        <record id="task2_form_view" model="ir.ui.view">
+            <field name="name">Staff.Form.View</field>
+            <field name="model">task2</field>
+            <field name="arch" type="xml">
+                <form string="Staff Form">
+                    <sheet>
+                        <group>
+                            <field name='name'/>
+                        </group>
+                        <group>
+                            <group>
+                                <field name="status"/>
+                                <field name="assign_to"/>
+                            </group>
+                            <group>
+                                <field name="dateline"/>
+                                <field name="note"/>
+                            </group>
+                        </group>
+                        <group>
+                            <field name="description" widget="html" string="Description"/>
+                        </group>
+                    </sheet>
+                </form>
+            </field>
+        </record>
+
+        <record id="task2_tree_view" model="ir.ui.view">
+            <field name="name">Staff.Tree.View</field>
+            <field name="model">task2</field>
+            <field name="arch" type="xml">
+                <tree string="Staff Tree">
+                    <field name="name"/>
+                    <field name="dateline"/>
+                    <field name="status"/>
+                </tree>
+            </field>
+        </record>
+    </data>
+</odoo>

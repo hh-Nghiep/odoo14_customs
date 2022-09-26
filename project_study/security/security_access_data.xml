@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<odoo>
+    <record id="group_study_user" model="res.groups">
+        <field name="name">Group Study User</field>
+
+    </record>
+
+    <record id="study_project_user" model="ir.rule">
+        <field name="name">Project User</field>
+        <field name="model_id" ref="model_project_study"/>
+        <field name="domain_force">[('create_uid', '=',user.id)]</field>
+        <field name="groups" eval="[(4, ref('group_study_user'))]"/>
+    </record>
+</odoo>
